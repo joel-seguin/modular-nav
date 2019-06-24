@@ -10,31 +10,49 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  font-family: sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-ul, li {
-   display: inline;
-   text-decoration: none;
- }
-
-@media only screen and (min-width: 25em) {
-
-  h1 {
-    text-align: center;
-  }
+li {
+  display: inline-block;
 }
 
-@media only screen and (min-width: 38em) {
+a {
+  color: #0074d9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #0074d9;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+header {
+  background-color: #e2e2e2;
+  text-align: center;
+}
+
+@media only screen and (min-width: 60em) {
 
   h1 {
     text-align: left;
   }
-}
 
-@media only screen and (min-width: 60em) {
+  ul {
+    text-align: right;
+  }
 
 }
